@@ -1,0 +1,119 @@
+.main {
+    display: flex;
+}
+
+.main__cell1 {
+    height: 50vh;
+    width: 50vw;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    padding: 100px;
+}
+
+.main__cell2 {
+    height: 50vh;
+    width: 50vw;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.main__cell3 {
+    height: 50vh;
+    width: 50vw;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.main__cell4 {
+    height: 50vh;
+    width: 50vw;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.main__cell {
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.main__title {
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main__input {
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.main__input1 {
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.main__button {
+    height: 34px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.main__button1 {
+    height: 34px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.form__item {
+    margin-right: 20px;
+}
+
+.main__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.main__content {
+    margin-top: 20px;
+    display: grid;
+    width: 500px;
+    grid-template-columns: 450px 50px;
+    grid-template-rows: 20px 50px 50px 50px 50px;
+}
+
+.main__text {
+    border: 1px solid #84fab0;
+}
+
+.main__brend {
+    padding-left: 10px;
+}
+
+.main__form {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__title-cell {
+    font-size: 10px;
+}
+
+.main__text1 {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.main__count {
+    text-align: center;
+}
+
+.none {
+    display: none;
+}

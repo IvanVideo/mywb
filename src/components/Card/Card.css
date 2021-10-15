@@ -1,0 +1,21 @@
+.card {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.card__text {
+    margin: 10px 0;
+}
+
+.card__img {
+    width: 70px;
+    height: 100px;
+}
+
+.card__column {
+    padding-left: 10px;
+}

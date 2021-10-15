@@ -1,0 +1,47 @@
+.orders__title {
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+.orders__form {
+    width: 400px;
+    height: 150px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(204, 162, 221);
+}
+
+.orders__input {
+    width: 150px;
+    margin: 10px;
+}
+
+.orders__conteiner {
+    display: flex;
+    height: 100vh;
+}
+
+.conteiner__left {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner__rigth {
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+    grid-template-rows: repeat(5, 200px);
+    gap: 30px;
+    width: 80%;
+}
+
+.orders__button {
+    height: 50px;
+    width: 200px;
+}
+
+.orders__text_none {
+    display: none;
+}
