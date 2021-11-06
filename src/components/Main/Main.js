@@ -63,20 +63,20 @@ function Main(props) {
             setFiberOrder(fiberArr)
         }
         if (props.arrCardsSales.length > 0) {
-            let mounTeaArrSale = props.arrCardsOrder.filter(item => (
+            let mounTeaArrSale = props.arrCardsSales.filter(item => (
                 item.brand === 'MounTea'
             ))
             console.log(mounTeaArrSale, 'sale1')
-            let meronArr = props.arrCardsOrder.filter(item => (
+            let meronArr = props.arrCardsSales.filter(item => (
                 item.brand === 'MERON Tea'
             ))
-            let mananaArr = props.arrCardsOrder.filter(item => (
+            let mananaArr = props.arrCardsSales.filter(item => (
                 item.brand === 'Manana Tea'
             ))
-            let coffeeArr = props.arrCardsOrder.filter(item => (
+            let coffeeArr = props.arrCardsSales.filter(item => (
                 item.brand === 'Coffee Grounds'
             ))
-            let fiberArr = props.arrCardsOrder.filter(item => (
+            let fiberArr = props.arrCardsSales.filter(item => (
                 item.brand === 'Manana Tea'
             ))
             setMounTeaSales(mounTeaArrSale)
@@ -97,7 +97,6 @@ function Main(props) {
                     <div className='main__box'>
                         <form className='main__form form' onSubmit={handleSubmitFromOrder} >
                             <input className='main__input form__item' name='date' type='date' onChange={handleChangeOrder} />
-                            <input className='main__input form__item' name='time' type='time' onChange={handleChangeOrder} />
                             <button className='main__button form__item' type='submit'>GO</button>
                         </form>
                         {
@@ -155,26 +154,10 @@ function Main(props) {
                                             ? <div className='main__text'><p className='main__count'>{coffeeOrder.length}</p></div>
                                             : null
                                     }
-
-                                    {/* <div className='main__text main__text1 main__title-cell'>бренд</div>
-                            <div className='main__text main__text2 main__title-cell'>кол-во</div>
-                            <div className='main__text main__brend'><p className='main__brend'>MounTea</p></div>
-                            <div className='main__text'><p className='main__count'>{mounTea.length}</p></div>
-                            <div className='main__text main__brend'><p className='main__brend'>MERON Tea</p></div>
-                            <div className='main__text'><p className='main__count'>{meron.length}</p></div>
-                            <div className='main__text main__brend'><p className='main__brend'>Manana Tea</p></div>
-                            <div className='main__text'><p className='main__count'>{manana.length}</p></div>
-                            <div className='main__text main__brend'><p className='main__brend'>FiberGel</p></div>
-                            <div className='main__text'><p className='main__count'>{fiber.length}</p></div>
-                            <div className='main__text main__brend'><p className='main__brend'>CoffeeGround</p></div>
-                            <div className='main__text'><p className='main__count'>{coffee.length}</p></div> */}
                                 </div>
                                 : null
                         }
                     </div>
-                </div>
-                <div className='main__cell main__cell2'>
-                    <p className='main__title'></p>
                 </div>
             </div>
             <div className='main__column'>
@@ -183,7 +166,6 @@ function Main(props) {
                     <div className='main__box'>
                         <form className='main__form form' onSubmit={handleSubmitFromSales} >
                             <input className='main__input1 form__item' name='date' type='date' onChange={handleChangeSales} />
-                            <input className='main__input1 form__item' name='time' type='time' onChange={handleChangeSales} />
                             <button className='main__button1 form__item' type='submit'>GO</button>
                         </form>
                         {
@@ -241,26 +223,10 @@ function Main(props) {
                                             ? <div className='main__text'><p className='main__count'>{coffeeSales.length}</p></div>
                                             : null
                                     }
-
-                                    {/* <div className='main__text main__text1 main__title-cell'>бренд</div>
-                            <div className='main__text main__text2 main__title-cell'>кол-во</div>
-                            <div className='main__text main__brend'><p className='main__brend'>MounTea</p></div>
-                            <div className='main__text'><p className='main__count'>{mounTea.length}</p></div>
-                            <div className='main__text main__brend'><p className='main__brend'>MERON Tea</p></div>
-                            <div className='main__text'><p className='main__count'>{meron.length}</p></div>
-                            <div className='main__text main__brend'><p className='main__brend'>Manana Tea</p></div>
-                            <div className='main__text'><p className='main__count'>{manana.length}</p></div>
-                            <div className='main__text main__brend'><p className='main__brend'>FiberGel</p></div>
-                            <div className='main__text'><p className='main__count'>{fiber.length}</p></div>
-                            <div className='main__text main__brend'><p className='main__brend'>CoffeeGround</p></div>
-                            <div className='main__text'><p className='main__count'>{coffee.length}</p></div> */}
                                 </div>
                                 : null
                         }
                     </div>
-                </div>
-                <div className='main__cell main__cell4'>
-                    <p className='main__title'></p>
                 </div>
             </div>
         </section>
